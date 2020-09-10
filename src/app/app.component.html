@@ -1,6 +1,5 @@
-<button (click)="pullStack(cards, lockMap)">Left</button>
-<button (click)="pushStack(cards, lockMap)">Right</button>
+<button (click)="swipe(numbers, [])">Click</button>
 
-<div class="slider">
-    <div class="slider__item" *ngFor="let card of inputs">{{card}}</div>
-</div>
+<ul>
+    <li *ngFor="let number of numbers">{{ number }}</li>
+</ul>

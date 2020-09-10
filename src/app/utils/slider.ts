@@ -1,4 +1,4 @@
-export function pullStack(items: any[], lockMap: number[]): any {
+export function pullStack(items: any[], lockMap: number[]): any[] {
   const [first, ...rest] = items;
   const newStack = [first, ...rest, items[findFirstUnlocked(items, lockMap)]];
   return newStack.reduce((shifted, item, index) => {
