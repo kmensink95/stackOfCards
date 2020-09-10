@@ -1,0 +1,3 @@
+[0910/092247.898:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: De pipes wordt gesloten. (0xE8)
+[0910/092409.765:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: De pipes wordt gesloten. (0xE8)
+[0910/092422.469:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: De pipes wordt gesloten. (0xE8)
