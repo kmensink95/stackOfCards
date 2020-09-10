@@ -1,3 +1,7 @@
+# StackOfCards
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+
 # Input
 You have a stack of cards. You can rearrange them by shifting every card to the left or to the right. When you shift to the left, the first card appears at the end of the stack. When you shift to the right, the last card appears at the beginning of the stack.
 For example:
@@ -15,10 +19,6 @@ If all of the cards locked or only one remains unlocked, the shift doesn't take 
 write a generic algorithm that gets a stack of cards of any length and information about locked cards and does the shift of stack in both directions.
 as advanced, write an algorithm in such a way that one of the directions reuses the generic logic of another shift, so you don't repeat yourself
 additionally, you can implement UI that animates shifts (slider analogy)
-
-# StackOfCards
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server
 
