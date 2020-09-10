@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { pullStack, pushStack, findRightUnlocked, findFirstUnlocked } from './utils/slider';
+import { pullStack, pushStack } from './utils/slider';
 
 @Component({
   selector: 'app-root',
@@ -7,19 +7,30 @@ import { pullStack, pushStack, findRightUnlocked, findFirstUnlocked } from './ut
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  pullStack = pullStack;
   numbers: number[] = [];
   lockMap: number[] = [];
+
   constructor(){}
 
   ngOnInit(): void {
-    console.log(pullStack([1, 2, 3, 4], [1]));
-    console.log(pushStack([2, 3, 4, 5], []));
     this.numbers = [1, 2, 3, 4, 5, 6, 7];
-    console.log(pullStack(this.numbers, this.lockMap));
   }
 
-  swipe(items, lockMap): void {
+  swipeLeft(items: any[], lockMap: any[]): void {
     this.numbers = pullStack(items, lockMap);
+  }
+
+  swipeRight(items: any[], lockMap: any[]): void {
+    this.numbers = pushStack(items, lockMap);
+  }
+
+  lockedMapItem(sliderItem: number): void {
+    const index = this.numbers.findIndex(number => number === sliderItem);
+    if (this.lockMap.includes(index)) {
+      this.lockMap = this.lockMap.filter(number => number !== index);
+    } else {
+      this.lockMap = [...this.lockMap, index];
+    }
+    console.log(this.lockMap)
   }
 }

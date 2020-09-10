@@ -1,5 +1,6 @@
-<button (click)="swipe(numbers, [])">Click</button>
+<button (click)="swipeLeft(numbers, lockMap)">Click</button>
+<button (click)="swipeRight(numbers, lockMap)">Click</button>
 
 <ul>
-    <li *ngFor="let number of numbers">{{ number }}</li>
+    <li *ngFor="let number of numbers" (click)="lockedMapItem(number)">{{ number }}</li>
 </ul>
