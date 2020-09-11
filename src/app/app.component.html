@@ -1,7 +1,7 @@
 <div class="page">
     <div class="slider__container">
         <div class="slider">
-            <div class="slider__item" *ngFor="let number of numbers" (click)="lockedMapItem(number)">{{number}}</div>
+            <div class="slider__item" *ngFor="let number of numbers | amount:3" (click)="lockedMapItem(number)">{{number}}</div>
         </div>
         <div class="slider__button-container">
             <button class="slider__button" (click)="swipeLeft(numbers, lockMap)">Swipe Left</button>

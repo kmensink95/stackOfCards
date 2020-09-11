@@ -9,22 +9,22 @@
     justify-content: space-between;
 
     &__container {
-        width: 900px;
+        width: 1000px;
         margin: 0 auto;
     }
 
     &__item {
         border: 1px solid white;
         height: 350px;
-        width: 100px;
+        width: 30%;
         font-size: 3em;
     }
 
     &__button-container {
-        width: 100%;
-        margin: 20px auto;
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        margin: 20px auto;
         padding: 3px;
     }
 
